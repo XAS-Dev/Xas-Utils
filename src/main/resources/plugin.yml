@@ -1,0 +1,4 @@
+name: LiteAntiCreeper
+version: '${version}'
+main: xyz.xasmc.xasutils.LiteAntiCreeper
+api-version: '1.18'
