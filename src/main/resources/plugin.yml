@@ -1,4 +1,4 @@
-name: LiteAntiCreeper
+name: XasUtils
 version: '${version}'
 main: xyz.xasmc.xasutils.XasUtils
 api-version: '1.18'
