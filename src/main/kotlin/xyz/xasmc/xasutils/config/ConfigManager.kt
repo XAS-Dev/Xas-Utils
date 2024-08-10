@@ -13,6 +13,7 @@ object ConfigManager {
         return PluginConfig(
             enable = config.getBoolean("enable"),
             creeperExplosionProtection = config.getBoolean("creeperExplosionProtection"),
+            snowballIgniteEntity = config.getBoolean("snowballIgniteEntity"),
         )
     }
 }

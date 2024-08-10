@@ -9,13 +9,9 @@ import xyz.xasmc.xasutils.XasUtils
 class ExplodeListener : Listener {
     @EventHandler
     fun onEntityExplodeEvent(event: EntityExplodeEvent) {
-        if (
-            XasUtils.getConfig().enable &&
-            XasUtils.getConfig().creeperExplosionProtection &&
-            event.entityType == EntityType.CREEPER
-        ) {
-            event.blockList().clear()
-        }
+        if (!(XasUtils.getConfig().enable && XasUtils.getConfig().creeperExplosionProtection)) return
+        if (event.entity.type != EntityType.CREEPER) return
+        event.blockList().clear()
     }
 
 }
